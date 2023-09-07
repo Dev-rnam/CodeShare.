@@ -12,7 +12,7 @@ const ThemeSelect = () => {
       <Select value={theme}
         onValueChange={(theme) => useStore.setState({ theme })}
         >
-        <SelectTrigger className="w-40">
+        <SelectTrigger className="w-60">
             <SelectValue placeholder="Select Theme" />
         </SelectTrigger>
         <SelectContent className="dark">

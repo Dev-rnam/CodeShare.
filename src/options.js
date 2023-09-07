@@ -1,4 +1,5 @@
 export const languages = {
+    apache: "Apache",
     bash: "Bash",
     c: "C",
     "c++": "C++",
@@ -8,6 +9,7 @@ export const languages = {
     css: "CSS",
     diff: "Diff",
     dockerfile: "Docker",
+    django: "Django",
     elm: "Elm",
     elixir: "Elixir",
     erlang: "Erlang",
@@ -23,6 +25,7 @@ export const languages = {
     lua: "Lua",
     markdown: "Markdown",
     matlab: "MATLAB/Octave",
+    nodejs: "Node.js",
     pascal: "Pascal",
     plaintext: "Plaintext",
     powershell: "Powershell",
@@ -37,6 +40,8 @@ export const languages = {
     swift: "Swift",
     toml: "TOML",
     typescript: "TypeScript/TSX",
+    vue: "Vue.js",
+    vbnet: "VB.NET",
     xml: "XML",
     yaml: "YAML",
   }

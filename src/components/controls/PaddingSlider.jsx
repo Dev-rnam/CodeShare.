@@ -9,7 +9,7 @@ const PaddingSlider = () => {
         Padding
       </label>
       <Slider
-        className="w-44 my-5"
+        className="w-60 my-5"
         value={[padding]}
         onValueChange={([padding]) => useStore.setState({ padding })}
         max={128}
