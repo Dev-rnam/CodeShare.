@@ -1,0 +1,127 @@
+.main{
+    background-image: url("/bgq.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    
+}
+
+.box-container{
+    -webkit-backdrop-filter: blur(98px);
+    backdrop-filter: blur(98px);
+    border-radius:50px;
+  }
+.vf{
+    background: rgba(255, 255, 255, 0.075)  !important ;
+    -webkit-backdrop-filter: blur(50px) !important;
+    backdrop-filter: blur(50px) !important;
+}
+  .nav {
+    width: 75px;
+    overflow: hidden;
+    border-radius: 34px;
+    background: hsla(0,0%,100%,.1) !important;
+    box-shadow: 0 8px 6px 0 rgba(0,0,0,.05), inset 0 1px 1px 0 hsla(0,0%,100%,.25), inset 0 -1px 1px 0 hsla(0,0%,100%,.25), inset 3px 4px 2px -3px hsla(0,0%,100%,.55);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    transition: .5s;
+}
+
+.box-container-right {
+    border-radius: 10px;
+    background: linear-gradient(180deg,rgba(0,163,255,.2),transparent),linear-gradient(0deg,rgba(0,0,0,.3),rgba(0,0,0,.3)),hsla(0,0%,100%,.1);
+}
+
+.box-container-left {
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    border: none;
+    box-shadow: 0 8px 6px 0 rgba(0,0,0,.05), inset 0 1px 1px 0 hsla(0,0%,100%,.25), inset 0 -1px 1px 0 hsla(0,0%,100%,.25), inset 2px 3px 3px -3px hsla(0,0%,100%,.6);
+    background: rgba(255, 255, 255, 0.1) !important ;
+}
+
+.box-author {
+    border-radius: 60px;
+    background: hsla(0,0%,100%,.1);
+    box-shadow: 0 8px 6px 0 rgba(0,0,0,.05), inset 0 1px 1px 0 hsla(0,0%,100%,.25), inset 0 -1px 1px 0 hsla(0,0%,100%,.25), inset 2px 3px 3px -3px hsla(0,0%,100%,.6);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+}
+
+.box-md {
+    border-radius: 10px;
+    background: hsla(0,0%,100%,.1) !important;
+    box-shadow: 0 8px 6px 0 rgba(0,0,0,.05), inset 0 1px 1px 0 hsla(0,0%,100%,.25), inset 0 -1px 1px 0 hsla(0,0%,100%,.25), inset 2px 3px 3px -3px hsla(0,0%,100%,.6);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+}
+
+
+.box-container, .nav-right-container {
+    box-shadow: 0 8px 6px 0 rgba(0,0,0,.05), inset 0 1px 1px 0 hsla(0,0%,100%,.25), inset 0 -1px 1px 0 hsla(0,0%,100%,.25), inset 3px 4px 2px -3px hsla(0,0%,100%,.55);
+}
+
+.fg:hover{
+    background: rgba(255, 255, 255, 0.151)  !important ;
+} 
+.fg{
+    background: transparent  !important ;
+}
+.vx{
+    transform: translateZ(-50px);  
+}
+
+.vy{
+    transform: skew(-8deg)
+}
+
+.animeBox{
+    /* display: none; */
+    transform: translateX(120px);
+    transform: translateY(-20px);
+   
+    animation: spins 1s ease-in-out alternate ;
+}
+
+@keyframes spins {
+   0%{
+    transform: translateX(-20px);
+   }
+  50%{
+    transform: translateY(-20px);
+  }
+   100%{
+    transform: translateX(0px);
+    transform: translateY(-20px);
+   }
+}
+
+/* BsArrowsAngleExpand */
+
+.anime{
+    /* display: none; */
+    transform: translateX(-200px);
+    display: block;
+   
+    animation: spin 1s ease-in-out alternate ;
+}
+
+@keyframes spin {
+   0%{
+    transform: translateX(0px);
+   
+   }
+  50%{
+   
+  }
+100%{
+    transform: translateX(-200px);
+    display: none;
+   }
+}
+
+.box{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}

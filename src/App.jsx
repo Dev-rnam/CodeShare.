@@ -4,8 +4,7 @@ function App() {
    
    return (
     <main >
-      <CodeShare />
-      
+      <CodeShare />  
     </main>
   )
 }

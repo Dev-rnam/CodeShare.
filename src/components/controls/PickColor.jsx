@@ -11,7 +11,7 @@ const ColorPicker = () => {
 
   return (
     <div>
-      <label className="block mb-2 text-xs font-medium text-neutral-400">
+      <label className="block mb-2 text-xs font-medium text-white">
         Background Color
       </label>
       <input

@@ -5,7 +5,7 @@ const DarkModeSwitch = () => {
     const darkMode = useStore((state) => state.darkMode)
   return (
     <div>
-      <label className="block mb-2 text-xs font-medium text-neutral-400">
+      <label className="block mb-2 text-xs font-medium text-white">
         DarkMode
       </label>
       <Switch

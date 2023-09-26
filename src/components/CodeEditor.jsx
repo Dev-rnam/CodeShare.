@@ -5,7 +5,6 @@ import Editor from "react-simple-code-editor";
 import useStore from '../store';
 import { useEffect } from "react";
 import flourite from "flourite";
-
 const CodeEditor = () => {
     const store = useStore()
 
@@ -58,7 +57,7 @@ const CodeEditor = () => {
                 }
                 style={{
                     fontFamily: fonts[store.fontStyle].name,
-                   fontSize: store.fontSize,
+                    fontSize: store.fontSize,
                 }}
                 textareaClassName="focus: outline-none "
                 onClick={(e) => e.target.select()}

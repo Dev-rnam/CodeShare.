@@ -18,19 +18,19 @@ const LanguageSelect = () => {
   }
   return (
     <div>
-      <label className="block mb-2 text-xs font-medium text-neutral-400">Language</label>
       <Select value={language}
         onValueChange={handleChange}
+        className="vf"
         >
         <SelectTrigger className="w-40">
             {autoDetectLanguage && <MagicWandIcon className="mr-2" />}
             <SelectValue placeholder="Select Language" />
         </SelectTrigger>
-        <SelectContent className="dark max-h-[500px]">
-            <SelectItem value="auto-detect">Auto Detect</SelectItem>  
+        <SelectContent className=" max-h-[500px] fg vf ff text-white">
+            <SelectItem value="auto-detect" className="ff">Auto Detect</SelectItem>  
             {
                 Object.entries(languages).map(([lang, name]) => (
-                <SelectItem key={lang} value={lang}>
+                <SelectItem key={lang} value={lang} className=" max-h-[500px] fg ff">
                      {name}
                 </SelectItem>
                 ))

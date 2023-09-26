@@ -5,7 +5,7 @@ const BackgroundSwitch = () => {
     const showBg = useStore((state) => state.showBackground)
   return (
     <div>
-        <label className="block mb-2 text-xs font-medium text-neutral-400">
+        <label className="block mb-2 text-xs font-medium text-white ">
         Background
       </label>
       <Switch

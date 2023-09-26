@@ -1,23 +1,22 @@
 import {
-    ImageIcon,
-    Link2Icon,
-    Share2Icon,
+    DownloadIcon,
   } from "@radix-ui/react-icons"
   import { Button } from "../ui/button"
   import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
+    DropdownMenuSeparator,
     DropdownMenuShortcut,
     DropdownMenuTrigger,
   } from "../ui/dropdown-menu"
-  import { BsFillSendFill } from "react-icons/bs";
+  
   import { toBlob, toPng, toSvg } from "html-to-image"
   import { toast } from "react-hot-toast"
   import useStore from "@/store"
   import { useHotkeys } from "react-hotkeys-hook"
   
-  export default function ExportOptions({ targetRef }) {
+  export default function ExportShare({ targetRef }) {
     const title = useStore((state) => state.title)
   
     const copyImage = async () => {
@@ -93,20 +92,27 @@ import {
     return (
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button className="bg-[#ffffff4c] text-white rounded-full  px-4 py-6 hover:bg-green-500" >
-            <BsFillSendFill className="" />
+          <Button className="bg-[#ffffff4c] text-white  rounded-full  px-4 py-6  hover:bg-green-500">
+          <DownloadIcon />
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="">
-          <DropdownMenuItem className="gap-2" onClick={copyImage}>
-            <ImageIcon />
-            Copy Image
-            <DropdownMenuShortcut>⌘C</DropdownMenuShortcut>
+        <DropdownMenuContent className=""> 
+          <DropdownMenuSeparator />
+          <DropdownMenuItem
+            className="gap-2"
+            onClick={() => saveImage(title, "PNG")}
+          >
+            <DownloadIcon />
+            Save as PNG
+            <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
           </DropdownMenuItem>
-          <DropdownMenuItem className="gap-2" onClick={copyLink}>
-            <Link2Icon />
-            Copy Link
-            <DropdownMenuShortcut>⇧⌘C</DropdownMenuShortcut>
+          <DropdownMenuItem
+            className="gap-2"
+            onClick={() => saveImage(title, "SVG")}
+          >
+            <DownloadIcon />
+            Save as SVG
+            <DropdownMenuShortcut>⇧⌘S</DropdownMenuShortcut>
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
